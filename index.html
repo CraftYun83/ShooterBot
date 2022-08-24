@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="zj8uypSAVu1zO2FG9EKdOKbLQppGNNtn8syujyoMsk8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>ShooterBot</title>
+</head>
+<body>
+    <script>
+        function handleCredentialResponse(e) {
+            window.location.href = "https://shooterbot.netlify.app/game?e="+e.credential
+        }
+    </script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <div id="mainText">
+        <h1 id="shooter">Shooter</h1>
+        <h1 id="bot">Bot</h1>
+        <div id="g_id_onload"
+            data-client_id="71057834502-os88l3cu68ofosrdh3bh4bua7pssfk6s.apps.googleusercontent.com"
+            data-callback="handleCredentialResponse">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
+    </div>
+    <div id="blur-overlay"></div>
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <script src="js/bideo.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

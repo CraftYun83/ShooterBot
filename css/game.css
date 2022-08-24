@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hurtTint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    background-color: red;
+    z-index: 3;
+}
+
+div#healthBar {
+    position: absolute;
+    left: 2%;
+    margin-top: 1%;
+    width: 15vw;
+    height: 15vh;
+    z-index: 2;
+
+}
+
+h1#ping {
+    font-size: 30px;
+    color: color;
+    position: absolute;
+    font-family: sans-serif;
+    top: 0;
+    right: 5%;
+    background-color: transparent;
+    z-index: 2;
+}
+
+div#message-icon {
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    background-color: #dadddf;
+    z-index: 2;
+}
+div#message-icon svg {
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    pointer-events: none;
+    z-index: 2;
+}
+div#greyscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    opacity: 0.8;
+}
+div#chatpopup {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(53, 53, 53);
+    opacity: 1;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    border-radius: 50px;
+}
+div#greyscreen svg {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+
+input#messageEntry {
+    position: absolute;
+    width: 75.7vw;
+    font-size: 1.5vw;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: inline-block;
+    align-self: flex-end;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+div#chatlog {
+    position: absolute;
+    bottom: 7vw;
+    min-width: 79vw;
+    max-width: 79vw;
+    min-height: 76vh;
+    max-height: 76vh;
+    overflow-y: scroll;
+}
+div#chatlog h1 {
+    min-width: 80vw;
+    max-width: 80vw;
+    max-height: 1.5vw;
+    font-size: 1.5vw;
+    color: white;
+    padding-left: 50px;
+    font-family: sans-serif;
+}
+
+img.crosshair {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 1;
+    width: 2%;
+    aspect-ratio: 1/1;
+}
